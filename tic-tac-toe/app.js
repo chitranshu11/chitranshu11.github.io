@@ -20,6 +20,7 @@ let counter = 0;
 function cellClicked () {
     if(!isGameOn) { //reload game if someone wins.
         location.reload();
+        return;
     }
 
     let eventText = event.target.textContent;
