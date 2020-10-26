@@ -20,8 +20,8 @@ let counter = 0;
 function cellClicked () {
     if(!isGameOn) { //reload game if someone wins.
         location.reload();
-        return;
     }
+    else {
 
     let eventText = event.target.textContent;
     
@@ -49,7 +49,7 @@ function cellClicked () {
             isGameOn = false;
         }
     }
-
+  }
 }
 
 //Function to check if someone wins.
